@@ -6,5 +6,9 @@ using System.Threading.Tasks;
 
 namespace EventHandlerPractice {
     class MailService {
+
+        public void OnVideoEncoded(object source, EventArgs e){
+            Console.WriteLine("Mail sent!");
+        }
     }
 }
