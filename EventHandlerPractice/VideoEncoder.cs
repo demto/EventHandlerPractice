@@ -11,6 +11,12 @@ namespace EventHandlerPractice {
 
         public void Encode(Video video){
             Console.WriteLine("Video is encoded!");
+
+            OnVideoEncoded(video);
+        }
+
+        protected virtual void OnVideoEncoded(Video vid){
+            VideoEncoded?.Invoke(this, new EventArgs());
         }
     }
 }
