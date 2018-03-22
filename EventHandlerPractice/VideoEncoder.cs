@@ -16,7 +16,7 @@ namespace EventHandlerPractice {
         }
 
         protected virtual void OnVideoEncoded(Video vid){
-            VideoEncoded?.Invoke(this, new EventArgs());
+            VideoEncoded?.Invoke(this, new VideoEventArgs(vid));
         }
     }
 }

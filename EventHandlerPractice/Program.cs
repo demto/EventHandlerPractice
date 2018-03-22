@@ -10,6 +10,9 @@ namespace EventHandlerPractice {
 
             var encoder = new VideoEncoder();
             var vid = new Video { Title = "Greatest Moie" };
+            var mailService = new MailService();
+
+            encoder.VideoEncoded += mailService.OnVideoEncoded;
 
             encoder.Encode(vid);
 

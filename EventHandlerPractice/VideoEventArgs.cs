@@ -7,6 +7,10 @@ using System.Threading.Tasks;
 namespace EventHandlerPractice {
     class VideoEventArgs : EventArgs{
 
+        public VideoEventArgs(Video video){
+            Video = video;
+        }
+
         public Video Video { get; set; }
     }
 }
