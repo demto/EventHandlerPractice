@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace EventHandlerPractice {
     class VideoEncoder {
 
-        public event EventHandler<EventArgs> VideoEncoded;
+        public event EventHandler<VideoEventArgs> VideoEncoded;
 
         public void Encode(Video video){
             Console.WriteLine("Video is encoded!");

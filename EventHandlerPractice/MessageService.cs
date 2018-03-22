@@ -5,10 +5,10 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace EventHandlerPractice {
-    class MailService {
+    class MessageService {
 
         public void OnVideoEncoded(object source, VideoEventArgs e){
-            Console.WriteLine($"Mail sent! - {e.Video.Title}");
+            Console.WriteLine($"Message has been sent too about {e.Video.Title}");
         }
     }
 }
